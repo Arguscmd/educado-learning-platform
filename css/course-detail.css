@@ -1,0 +1,241 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #020617;
+  color: #fff;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.course-hero {
+  display: flex;
+  gap: 40px;
+  padding: 60px;
+  background: linear-gradient(135deg, rgba(199,240,0,0.3), #020617);
+}
+
+.hero-content { max-width: 600px; }
+
+.course-tag {
+  background: rgba(199,240,0,0.25);
+  color: #c7f000;
+  padding: 6px 16px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+
+.hero-desc {
+  color: #e5fda8;
+  margin-bottom: 20px;
+}
+
+.course-hero .fade-in {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.back-link {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-meta {
+    margin-bottom: 40px;
+}
+
+.hero-meta span {
+  margin-right: 16px;
+  font-size: 0.9rem;
+  color: #d9f99d;
+}
+
+.hero-image img {
+  width: 360px;
+  border-radius: 24px;
+  transition: transform 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.course-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 50px 60px;
+}
+
+/* ===============================
+   CONTENT CARDS
+================================ */
+.content-card,
+.side-card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 24px;
+  padding: 28px;
+  margin-bottom: 30px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.content-card:hover,
+.side-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(199,240,0,0.18);
+}
+
+.learn-list li {
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   CURRICULUM
+================================ */
+.module {
+  margin-top: 20px;
+}
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 14px;
+  transition: background 0.3s;
+}
+
+.module-header:hover {
+  background: rgba(199,240,0,0.15);
+}
+
+.lesson-list {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.lesson {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.lesson:hover {
+  transform: translateX(6px);
+}
+
+.lesson.completed { background: rgba(199,240,0,0.15); }
+.lesson.active { background: rgba(199,240,0,0.3); }
+.lesson.locked { opacity: 0.5; }
+
+/* ===============================
+   SIDEBAR
+================================ */
+.instructor {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.instructor img {
+  width: 44px;
+  border-radius: 50%;
+}
+
+/* ===============================
+   PROGRESS
+================================ */
+.progress-bar {
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  height: 100%;
+  display: block;
+  background: linear-gradient(90deg, #c7f000, #9fe000);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.primary-btn,
+.secondary-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 700;
+  background: linear-gradient(135deg, #c7f000, #9fe000);
+  cursor: pointer;
+  margin-top: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(199,240,0,0.4);
+}
+
+.outline-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 40px;
+  background: transparent;
+  border: 1px solid #c7f000;
+  color: #c7f000;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.outline-btn:hover {
+  background: #c7f000;
+  color: #020617;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

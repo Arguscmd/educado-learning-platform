@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educado LMS | Quiz</title>
+
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- =============================
+     QUIZ PAGE
+============================= -->
+<main class="quiz-page">
+
+  <!-- =============================
+       QUIZ TOP BAR
+  ============================= -->
+  <header class="quiz-header">
+    <div>
+      <h2>UI/UX Design Quiz</h2>
+      <p id="questionCounter">Question 1 of 5</p>
+    </div>
+
+    <div class="quiz-controls">
+      <span class="timer">⏱ <span id="timer">10:00</span></span>
+      <button id="endTestBtn" class="danger-btn">End Test</button>
+    </div>
+  </header>
+
+  <!-- =============================
+       PROGRESS BAR
+  ============================= -->
+  <div class="progress-wrapper">
+    <div class="progress-bar">
+      <span id="progress"></span>
+    </div>
+  </div>
+
+  <!-- =============================
+       MAIN CONTENT
+  ============================= -->
+  <section class="quiz-content">
+
+    <!-- QUESTION -->
+    <div class="question-box fade-in">
+      <h3 id="questionText"></h3>
+    </div>
+
+    <!-- OPTIONS -->
+    <div class="options-box" id="options"></div>
+
+  </section>
+
+  <!-- =============================
+       FOOTER ACTIONS
+  ============================= -->
+  <footer class="quiz-footer">
+
+    <button id="markBtn" class="review-btn">
+      Mark for Review
+    </button>
+
+    <div class="nav-buttons">
+      <button id="prevBtn" class="ghost-btn">Previous</button>
+      <button id="nextBtn" class="primary-btn">Next</button>
+    </div>
+
+  </footer>
+
+</main>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>

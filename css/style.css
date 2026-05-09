@@ -1,0 +1,168 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background: #020617;
+}
+
+/* ===============================
+   WELCOME SCREEN
+================================ */
+.welcome-screen {
+  position: relative;
+  height: 100vh;
+  background: url("images/welcome-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===============================
+   OVERLAY (BRAND GLOW)
+================================ */
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top,
+      rgba(199,240,0,0.35),
+      transparent 55%),
+    linear-gradient(
+      to bottom,
+      rgba(2,6,23,0.7),
+      rgba(2,6,23,0.95)
+    );
+  animation: overlayPulse 9s ease-in-out infinite;
+}
+
+@keyframes overlayPulse {
+  0%,100% { opacity: 0.9; }
+  50% { opacity: 1; }
+}
+
+/* ===============================
+   CONTENT
+================================ */
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+  color: #ffffff;
+  animation: floatContent 6s ease-in-out infinite;
+}
+
+@keyframes floatContent {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ===============================
+   LOGO
+================================ */
+.logo-wrap img {
+  width: 320px;
+  margin-bottom: 102px;
+  opacity: 0;
+  transform: scale(0.6);
+  animation: logoReveal 1.4s ease forwards;
+}
+
+@keyframes logoReveal {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===============================
+   TITLE
+================================ */
+.welcome-title {
+  font-size: 3.3rem;
+  font-weight: 800;
+
+  opacity: 0;
+  transform: translateY(50px);
+  animation: revealUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.welcome-title span {
+  color: #c7f000;
+  text-shadow:
+    0 0 15px rgba(199,240,0,0.6),
+    0 0 40px rgba(199,240,0,0.4);
+}
+
+.welcome-tagline {
+  font-size: 1.1rem;
+  color: #d9f99d;
+  margin-bottom: 44px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: revealUp 1s ease forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   BUTTON (NEON INTERACTION)
+================================ */
+.enter-platform {
+  position: relative;
+  padding: 16px 46px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #020617;
+  background: linear-gradient(135deg, #c7f000, #9fe000);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0;
+  animation: revealUp 1s ease forwards;
+  animation-delay: 1.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.enter-platform:hover {
+  transform: scale(1.06);
+  box-shadow:
+    0 0 20px rgba(199,240,0,0.6),
+    0 0 60px rgba(199,240,0,0.4);
+}
+
+.enter-platform::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.7),
+    transparent
+  );
+  transform: translateX(-100%);
+}
+
+.enter-platform:hover::before {
+  transform: translateX(100%);
+  transition: transform 0.7s ease;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educado LMS | Quizzes</title>
+
+  <link rel="stylesheet" href="css/allquiz.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<main class="quizzes-page">
+
+    
+  <!-- =============================
+       PAGE HEADER
+  ============================= -->
+<section class="quiz-hero">
+  <div class="hero-inner">
+
+    <a href="dashboard.html" class="back-home-btn">
+      <span class="icon">←</span>
+      <span class="text">Back to Dashboard</span>
+    </a>
+
+    <h1>Quizzes</h1>
+    <p>Challenge yourself. Track your mastery.</p>
+
+  </div>
+</section>
+
+
+  <!-- =============================
+     TOOLBAR
+============================= -->
+<section class="quiz-toolbar">
+
+    <div class="first-row">
+
+  <!-- ROW 1: SEARCH + SORT -->
+  <div class="toolbar-row">
+    <input 
+      type="text" 
+      id="searchQuiz" 
+      placeholder="Search quizzes..."
+      class="search-input"
+    />
+
+  <!-- SORT DROPDOWN -->
+<div class="sort-dropdown" id="sortDropdown">
+  <button class="sort-trigger">
+    <span id="selectedSort">Most Popular</span>
+    <i class="arrow"></i>
+  </button>
+
+  <ul class="sort-menu">
+    <li class="active">Most Popular</li>
+    <li>Newest</li>
+    <li>Highest Rated</li>
+  </ul>
+</div>
+
+</div>
+<!-- =============================
+     QUIZ INSIGHTS
+============================= -->
+<section class="quiz-insights">
+
+  <div class="insight-card">
+    <h3>Quizzes Attempted</h3>
+    <strong>14</strong>
+  </div>
+
+  <div class="insight-card">
+    <h3>Average Score</h3>
+    <strong>78%</strong>
+  </div>
+
+  <div class="insight-card">
+    <h3>Best Category</h3>
+    <strong>UI/UX</strong>
+  </div>
+
+</section>
+
+  <!-- ROW 2: FILTER TABS -->
+   <div class="filter-history-div">
+  <div class="filter-tabs">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="uiux">UI/UX</button>
+    <button class="filter-btn" data-category="development">Development</button>
+    <button class="filter-btn" data-category="marketing">Marketing</button>
+  </div>
+
+<a href="quiz-history.html">View History</a>
+
+  </div>
+
+</section>
+
+
+  <!-- =============================
+       QUIZ GRID
+  ============================= -->
+  <section class="quiz-grid" id="quizGrid">
+
+    <!-- QUIZ CARD -->
+    <div class="quiz-card" data-title="UI UX Fundamentals" data-category="uiux">
+      <div class="quiz-badge">UI/UX</div>
+
+      <h3>UI/UX Fundamentals</h3>
+
+      <div class="quiz-info">
+        <span>📝 20 Questions</span>
+        <span>⏱ 20 Min</span>
+        <span>🎯 Intermediate</span>
+      </div>
+
+      <div class="quiz-status attempted">Attempted · Best 85%</div>
+
+      <a href="quiz.html" class="start-btn">Start Quiz →</a>
+    </div>
+
+    <div class="quiz-card" data-title="JavaScript Basics" data-category="development">
+      <div class="quiz-badge dev">Development</div>
+
+      <h3>JavaScript Basics</h3>
+
+      <div class="quiz-info">
+        <span>📝 15 Questions</span>
+        <span>⏱ 15 Min</span>
+        <span>🎯 Beginner</span>
+      </div>
+
+      <div class="quiz-status new">Not Attempted</div>
+
+      <a href="quiz.html" class="start-btn">Start Quiz →</a>
+    </div>
+
+    <div class="quiz-card" data-title="Digital Marketing Strategy" data-category="marketing">
+      <div class="quiz-badge marketing">Marketing</div>
+
+      <h3>Digital Marketing Strategy</h3>
+
+      <div class="quiz-info">
+        <span>📝 25 Questions</span>
+        <span>⏱ 30 Min</span>
+        <span>🎯 Advanced</span>
+      </div>
+
+      <div class="quiz-status attempted">Attempted · Best 72%</div>
+
+      <a href="quiz.html" class="start-btn">Start Quiz →</a>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="js/allquiz.js"></script>
+</body>
+</html>

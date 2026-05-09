@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educado LMS | Dashboard</title>
+
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<div class="dashboard-layout">
+
+  <!-- =============================
+       SIDEBAR
+  ============================= -->
+  <aside class="sidebar">
+    <div class="brand">
+      <img src="Images/edu-logo.svg" alt="Educado">
+    </div>
+
+    <nav class="nav-links">
+      <a class="active" href="dashboard.html">Dashboard</a>
+      <a href="courses.html">My Courses</a>
+      <a href="allquiz.html">Quizzes</a>
+      <a href="result.html">Certificates</a>
+      <a href="quiz-history.html">Quiz History</a>
+      <a href="#">Settings</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- =============================
+       MAIN CONTENT
+  ============================= -->
+  <main class="main-content">
+
+    <!-- =============================
+         TOP BAR
+    ============================= -->
+    <header class="topbar">
+      <div>
+        <h1>Hello Kartik 👋</h1>
+        <p class="subtitle">Your learning space, all in one place</p>
+      </div>
+
+      <a href="profile.html" class="user-chip">
+        <span>Kartik</span>
+        <img src="Images/user.svg" alt="User">
+      </a>
+    </header>
+
+    <!-- =============================
+         HERO HIGHLIGHT
+    ============================= -->
+    <section class="highlight-card">
+      <div class="highlight-text">
+        <h2>Continue Your Learning Journey</h2>
+        <p>You’re doing great! Resume where you left off and keep moving forward.</p>
+        <a href="course-detail.html" class="primary-btn">Resume Course</a>
+      </div>
+
+      <div class="highlight-image">
+        <img src="Images/hero-img.png" alt="Course">
+      </div>
+    </section>
+
+    <!-- =============================
+         KPI STATS
+    ============================= -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <h4>Enrolled Courses</h4>
+        <strong>8</strong>
+      </div>
+      <div class="kpi-card">
+        <h4>Completed</h4>
+        <strong>4</strong>
+      </div>
+      <div class="kpi-card">
+        <h4>Quizzes Taken</h4>
+        <strong>14</strong>
+      </div>
+      <div class="kpi-card">
+        <h4>Certificates</h4>
+        <strong>2</strong>
+      </div>
+    </section>
+
+    <!-- =============================
+         COURSES
+    ============================= -->
+    <section class="courses-section">
+      <h2>Your Courses</h2>
+
+      <div class="course-grid">
+
+        <div class="course-card">
+          <img src="Images/Rectangle 54.png" alt="JS">
+          <div class="course-body">
+            <h3>Advanced JavaScript</h3>
+            <p>Progress: 70%</p>
+            <div class="progress-bar"><span style="width:70%"></span></div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="Images/Rectangle 53.png" alt="UIUX">
+          <div class="course-body">
+            <h3>UI/UX Design</h3>
+            <p>Progress: 65%</p>
+            <div class="progress-bar"><span style="width:65%"></span></div>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="Images/Rectangle 52.png" alt="React">
+          <div class="course-body">
+            <h3>React Fundamentals</h3>
+            <p>Progress: 40%</p>
+            <div class="progress-bar"><span style="width:40%"></span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

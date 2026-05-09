@@ -1,0 +1,150 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #020617;
+  color: #fff;
+}
+
+/* ===============================
+   TOP BAR
+================================ */
+.lesson-topbar {
+  padding: 20px 40px;
+  background: rgba(2,6,23,0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+.lesson-layout {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* ===============================
+   VIDEO CARD
+================================ */
+.video-card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.video-card video {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* ===============================
+   LESSON INFO
+================================ */
+.lesson-info {
+  margin-top: 24px;
+  background: rgba(255,255,255,0.04);
+  padding: 24px;
+  border-radius: 20px;
+}
+
+/* ===============================
+   TABS
+================================ */
+.lesson-tabs {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background: rgba(255,255,255,0.06);
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: rgba(199,240,0,0.25);
+  color: #c7f000;
+}
+
+/* ===============================
+   TAB CONTENT
+================================ */
+.tab-content {
+  display: none;
+  margin-top: 20px;
+  background: rgba(255,255,255,0.04);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* ===============================
+   SIDEBAR
+================================ */
+.lesson-sidebar {
+  background: rgba(255,255,255,0.04);
+  border-radius: 24px;
+  padding: 24px;
+  height: fit-content;
+}
+
+.lesson-module {
+  margin-top: 20px;
+}
+
+.lesson-item {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.lesson-item:hover {
+  transform: translateX(6px);
+}
+
+.lesson-item.completed { background: rgba(199,240,0,0.15); }
+.lesson-item.active { background: rgba(199,240,0,0.3); }
+.lesson-item.locked { opacity: 0.5; }
+
+/* ===============================
+   ANIMATIONS
+================================ */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

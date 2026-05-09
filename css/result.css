@@ -1,0 +1,166 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0b132f, #020617);
+  color: #fff;
+}
+
+/* ===============================
+   HERO
+================================ */
+.result-hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.result-hero h1 {
+  font-size: 3rem;
+  color: #c7f000;
+}
+
+.result-hero h2 {
+  margin-top: 10px;
+}
+
+/* ===============================
+   SUMMARY
+================================ */
+.result-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.score-card,
+.details-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 24px;
+  padding: 30px;
+  text-align: center;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 6px solid #c7f000;
+  display: grid;
+  place-items: center;
+  margin: 20px auto;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.status.pass {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+/* ===============================
+   CERTIFICATE
+================================ */
+.certificate-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.certificate-card {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 40px;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    rgba(199,240,0,0.25),
+    rgba(255,255,255,0.04)
+  );
+}
+
+.cert-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c7f000;
+}
+
+.cert-footer {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* ===============================
+   ACTIONS
+================================ */
+.cert-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* ===============================
+   NAV
+================================ */
+.result-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.primary-btn {
+  padding: 12px 28px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 700;
+  background: linear-gradient(135deg, #c7f000, #9fe000);
+  cursor: pointer;
+}
+
+.outline-btn {
+  padding: 12px 28px;
+  border-radius: 40px;
+  border: 1px solid #c7f000;
+  background: transparent;
+  color: #c7f000;
+  cursor: pointer;
+}
+
+.ghost-btn {
+  padding: 12px 24px;
+  border-radius: 40px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}

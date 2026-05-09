@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educado LMS | Profile</title>
+
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<main class="profile-page">
+<!-- =============================
+     PROFILE HERO (FIXED STRUCTURE)
+============================= -->
+<section class="profile-hero">
+
+  <div class="hero-container">
+
+    <!-- LEFT : AVATAR -->
+    <div class="hero-avatar">
+      <img src="Images/user.svg" alt="User Avatar">
+      <span class="online-dot"></span>
+    </div>
+
+    <!-- CENTER : USER INFO -->
+    <div class="hero-info">
+      <h1>Kartik Gautam</h1>
+      <p class="email">kartik@example.com</p>
+      <span class="track">UI/UX Learning Track</span>
+
+      <div class="hero-actions">
+        <button class="primary-btn">Edit Profile</button>
+        <a href="settings.html" class="ghost-btn">Settings</a>
+      </div>
+    </div>
+
+    <!-- RIGHT : LEVEL -->
+    <div class="hero-level">
+      <h4>Learning Level</h4>
+      <strong>Intermediate</strong>
+
+      <div class="level-bar">
+        <span style="width:68%"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- =============================
+       STATS STRIP
+  ============================= -->
+  <section class="stats-strip">
+
+    <div class="stat-card" data-count="8">
+      <label>Enrolled</label>
+      <span>0</span>
+    </div>
+
+    <div class="stat-card" data-count="4">
+      <label>Completed</label>
+      <span>0</span>
+    </div>
+
+    <div class="stat-card" data-count="14">
+      <label>Quizzes</label>
+      <span>0</span>
+    </div>
+
+    <div class="stat-card" data-count="2">
+      <label>Certificates</label>
+      <span>0</span>
+    </div>
+
+  </section>
+
+  <!-- =============================
+       MAIN GRID
+  ============================= -->
+  <section class="profile-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-col">
+
+      <div class="card large hover-rise">
+        <h2>Currently Learning</h2>
+        <h3>UI/UX Design Masterclass</h3>
+        <p>Lesson 12 of 24</p>
+
+        <div class="progress">
+          <span style="width:65%"></span>
+        </div>
+
+        <a href="video-lesson.html" class="link-btn">
+          Continue Learning →
+        </a>
+      </div>
+
+      <div class="card hover-rise">
+        <h2>Achievements</h2>
+        <div class="badges">
+          <span>🏆 First Course</span>
+          <span>🔥 7-Day Streak</span>
+          <span>🎯 Quiz Master</span>
+          <span>🎓 Certified</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-col">
+
+      <div class="card hover-rise">
+        <h2>Skill Progress</h2>
+
+        <div class="skill">
+          <label>UI Design</label>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+
+        <div class="skill">
+          <label>UX Research</label>
+          <div class="bar"><span style="width:65%"></span></div>
+        </div>
+
+        <div class="skill">
+          <label>Frontend Basics</label>
+          <div class="bar"><span style="width:50%"></span></div>
+        </div>
+      </div>
+
+      <div class="card hover-rise">
+        <h2>Recent Activity</h2>
+        <ul class="activity">
+          <li>✅ Completed “Design Principles”</li>
+          <li>🧠 Scored 85% in UI/UX Quiz</li>
+          <li>🎓 Earned UI/UX Certificate</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="js/profile.js"></script>
+</body>
+</html>

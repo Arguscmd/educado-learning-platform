@@ -1,0 +1,16 @@
+@media (max-width: 900px) {
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-brand {
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 30px;
+  }
+}

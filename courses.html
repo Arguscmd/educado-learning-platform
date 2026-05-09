@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educado LMS | Courses</title>
+
+  <link rel="stylesheet" href="css/courses.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<div class="courses-page">
+
+  <!-- HERO / BANNER -->
+  <section class="courses-hero">
+    <div class="hero-content">
+      <h1>Explore Our Courses</h1>
+      <p>Learn from industry-focused courses designed for real growth</p>
+    </div>
+  </section>
+
+  <!-- =============================
+     PAGE NAVIGATION
+============================= -->
+<div class="page-nav">
+  <a href="dashboard.html" class="back-btn">
+    ← Back to Dashboard
+  </a>
+</div>
+
+
+  <!-- MAIN LAYOUT -->
+  <div class="courses-layout">
+
+    <!-- SIDEBAR (OPTIONAL) -->
+<aside class="courses-sidebar">
+
+<!-- =============================
+     SIDEBAR NAVIGATION
+============================= -->
+<a href="dashboard.html" class="sidebar-home">
+  🏠 Dashboard
+</a>
+
+  <div class="sidebar-header">
+    <h3>Filters</h3>
+    <button class="clear-btn">Clear</button>
+  </div>
+
+  <!-- CATEGORY -->
+  <div class="filter-block">
+    <h4>Category</h4>
+    <div class="filter-pills">
+      <button class="pill active">All</button>
+      <button class="pill">Design</button>
+      <button class="pill">Development</button>
+      <button class="pill">Marketing</button>
+    </div>
+  </div>
+
+  <!-- LEVEL -->
+  <div class="filter-block">
+    <h4>Level</h4>
+    <div class="filter-pills">
+      <button class="pill">Beginner</button>
+      <button class="pill">Intermediate</button>
+      <button class="pill">Advanced</button>
+    </div>
+  </div>
+
+  <!-- DURATION -->
+  <div class="filter-block">
+    <h4>Duration</h4>
+    <div class="duration-tags">
+      <span>&lt; 5 hrs</span>
+      <span>5–10 hrs</span>
+      <span>10+ hrs</span>
+    </div>
+  </div>
+
+</aside>
+
+
+    <!-- CONTENT -->
+    <main class="courses-content">
+
+      <!-- TOP CONTROLS -->
+      <div class="courses-topbar">
+        <span>Showing <strong>12</strong> courses</span>
+
+        <select class="sort-select">
+          <option>Most Popular</option>
+          <option>Newest</option>
+          <option>Highest Rated</option>
+        </select>
+      </div>
+
+      <!-- FEATURED -->
+      <section class="featured-section">
+        <h2>Featured Courses</h2>
+
+        <div class="course-grid">
+
+          <div class="course-card featured">
+            <img src="Images/quix-img/Rectangle 57-2.jpg" alt="">
+            <div class="course-body">
+              <span class="badge">Featured</span>
+              <h3>UI/UX Design Masterclass</h3>
+              <p>Beginner · 24 Lessons</p>
+              <div class="meta">
+                <span>⏱ 8h</span>
+                <span>⭐ 4.9</span>
+              </div>
+              <a href="course-detail.html" class="course-btn">View Course</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- ALL COURSES -->
+      <section class="all-courses">
+        <h2>All Courses</h2>
+
+        <div class="course-grid">
+
+          <div class="course-card">
+            <img src="Images/quix-img/Rectangle 57-3.jpg" alt="">
+            <div class="course-body">
+              <h3>Advanced JavaScript</h3>
+              <p>Intermediate · 22 Lessons</p>
+              <div class="meta">
+                <span>⏱ 8h</span>
+                <span>⭐ 4.7</span>
+              </div>
+              <a href="#" class="course-btn">View Course</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="Images/quix-img/Rectangle 57-4.jpg" alt="">
+            <div class="course-body">
+              <h3>React Fundamentals</h3>
+              <p>Beginner · 20 Lessons</p>
+              <div class="meta">
+                <span>⏱ 7h</span>
+                <span>⭐ 4.6</span>
+              </div>
+              <a href="#" class="course-btn">View Course</a>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="Images/quix-img/Rectangle 57-7.jpg" alt="">
+            <div class="course-body">
+              <h3>Digital Marketing Basics</h3>
+              <p>Beginner · 16 Lessons</p>
+              <div class="meta">
+                <span>⏱ 5h</span>
+                <span>⭐ 4.5</span>
+              </div>
+              <a href="#" class="course-btn">View Course</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</div>
+
+<script src="js/courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+/* =============================
+   BASE
+============================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0b132f, #020617);
+  color: #fff;
+}
+
+/* =============================
+   HERO
+============================= */
+/* =============================
+   PROFILE HERO (ALIGNED)
+============================= */
+.profile-hero {
+  padding: 60px;
+  background: linear-gradient(135deg, rgba(199,240,0,0.25), #020617);
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 40px;
+}
+
+/* AVATAR */
+.hero-avatar {
+  position: relative;
+}
+
+.hero-avatar img {
+  width: 110px;
+  border-radius: 50%;
+  border: 4px solid #c7f000;
+}
+
+.hero-avatar .online-dot {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  background: #22c55e;
+  border-radius: 50%;
+  border: 3px solid #020617;
+}
+
+/* USER INFO */
+.hero-info h1 {
+  font-size: 2.2rem;
+}
+
+.hero-info .email {
+  color: #cbd5e1;
+  margin: 4px 0;
+}
+
+.hero-info .track {
+  color: #c7f000;
+  font-size: 0.9rem;
+}
+
+.hero-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+}
+
+/* LEVEL CARD */
+.hero-level {
+  width: 260px;
+  background: rgba(255,255,255,0.08);
+  padding: 22px;
+  border-radius: 20px;
+}
+
+.hero-level h4 {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.hero-level strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 1.2rem;
+}
+
+/* LEVEL BAR */
+.level-bar {
+  height: 8px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+}
+
+.level-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #c7f000, #9fe000);
+}
+
+
+/* =============================
+   STATS
+============================= */
+.stats-strip {
+  max-width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  cursor: pointer;
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 22px;
+  text-align: center;
+  transition: transform .4s, box-shadow .4s;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(199,240,0,0.25);
+}
+
+.stat-card span {
+  font-size: 2rem;
+  color: #c7f000;
+  font-weight: 700;
+}
+
+/* =============================
+   GRID
+============================= */
+.profile-grid {
+  max-width: 1200px;
+  margin: 50px auto 80px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+.left-col,
+.right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* =============================
+   CARDS
+============================= */
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 26px;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.card.large {
+  padding: 40px;
+}
+
+.hover-rise {
+  transition: transform .4s, box-shadow .4s;
+}
+
+.hover-rise:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 35px 80px rgba(199,240,0,0.25);
+}
+
+/* =============================
+   PROGRESS & SKILLS
+============================= */
+.progress,
+.bar {
+  height: 8px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.progress span,
+.bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #c7f000, #9fe000);
+}
+
+/* =============================
+   BADGES & ACTIVITY
+============================= */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.badges span {
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(199,240,0,0.2);
+  color: #c7f000;
+  font-size: 0.85rem;
+}
+
+.activity li {
+  margin-top: 10px;
+}
+
+/* =============================
+   BUTTONS
+============================= */
+.primary-btn {
+  padding: 12px 26px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #c7f000, #9fe000);
+  border: none;
+  font-weight: 700;
+}
+
+.ghost-btn {
+  padding: 12px 26px;
+  border-radius: 40px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-btn {
+  display: inline-block;
+  margin-top: 16px;
+  color: #c7f000;
+  text-decoration: none;
+}

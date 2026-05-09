@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educado LMS | Video Lesson</title>
+
+  <link rel="stylesheet" href="css/video-lesson.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- =============================
+     VIDEO LESSON PAGE
+============================= -->
+<main class="lesson-page">
+
+  <!-- =============================
+       TOP BAR
+  ============================= -->
+  <header class="lesson-topbar">
+    <h2>UI/UX Design Masterclass</h2>
+    <span class="lesson-progress">Lesson 2 of 24</span>
+  </header>
+
+  <!-- =============================
+       MAIN LAYOUT
+  ============================= -->
+  <section class="lesson-layout">
+
+    <!-- =============================
+         VIDEO + DETAILS
+    ============================= -->
+    <div class="lesson-main">
+
+      <!-- VIDEO PLAYER -->
+      <div class="video-card fade-in">
+        <video controls poster="assets/images/course-uiux.jpg">
+          <source src="" type="video/mp4">
+          Your browser does not support video.
+        </video>
+      </div>
+
+      <!-- LESSON INFO -->
+      <div class="lesson-info slide-up">
+        <h3>Design Principles</h3>
+        <p>
+          In this lesson, you’ll learn the core design principles used by
+          professional UI/UX designers across real products.
+        </p>
+      </div>
+
+      <!-- TABS -->
+      <div class="lesson-tabs slide-up">
+        <button class="tab-btn active" data-tab="notes">Notes</button>
+        <button class="tab-btn" data-tab="resources">Resources</button>
+      </div>
+
+      <!-- TAB CONTENT -->
+      <div class="tab-content active" id="notes">
+        <p>• Design is not just aesthetics, it’s problem solving.</p>
+        <p>• Consistency builds trust.</p>
+        <p>• Accessibility is not optional.</p>
+      </div>
+
+      <div class="tab-content" id="resources">
+        <ul>
+          <li><a href="#">Design Principles PDF</a></li>
+          <li><a href="#">Figma File</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- =============================
+         LESSON SIDEBAR
+    ============================= -->
+    <aside class="lesson-sidebar fade-in">
+
+      <h4>Course Content</h4>
+
+      <!-- MODULE -->
+      <div class="lesson-module">
+        <h5>Module 1: Basics</h5>
+
+        <ul class="lesson-list">
+          <li class="lesson-item completed">✅ Introduction</li>
+          <li class="lesson-item active">▶ Design Principles</li>
+          <li class="lesson-item locked">🔒 UX vs UI</li>
+        </ul>
+      </div>
+
+      <!-- MODULE -->
+      <div class="lesson-module">
+        <h5>Module 2: Research</h5>
+        <ul class="lesson-list">
+          <li class="lesson-item locked">🔒 User Research</li>
+          <li class="lesson-item locked">🔒 Personas</li>
+        </ul>
+      </div>
+
+    </aside>
+
+  </section>
+
+</main>
+
+<script src="js/video-lesson.js"></script>
+</body>
+</html>

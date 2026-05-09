@@ -1,0 +1,170 @@
+/* ===============================
+   RESET & BASE
+================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0b132f, #020617);
+  color: #fff;
+}
+
+/* ===============================
+   QUIZ HEADER
+================================ */
+.quiz-header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(2,6,23,0.95);
+}
+
+.quiz-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.timer {
+  font-weight: 700;
+  color: #c7f000;
+}
+
+/* ===============================
+   PROGRESS
+================================ */
+.progress-wrapper {
+  padding: 0 40px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #c7f000, #9fe000);
+  transition: width 0.4s ease;
+}
+
+/* ===============================
+   CONTENT
+================================ */
+.quiz-content {
+  padding: 40px;
+}
+
+.question-box {
+  background: rgba(255,255,255,0.05);
+  padding: 28px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+/* ===============================
+   OPTIONS
+================================ */
+.options-box {
+  display: grid;
+  gap: 16px;
+}
+
+.option {
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: 0.3s;
+}
+
+.option span {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(199,240,0,0.2);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.option:hover {
+  background: rgba(199,240,0,0.2);
+  transform: translateX(6px);
+}
+
+.option.selected {
+  background: rgba(199,240,0,0.35);
+}
+
+/* ===============================
+   FOOTER
+================================ */
+.quiz-footer {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.primary-btn {
+  padding: 12px 28px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 700;
+  background: linear-gradient(135deg, #c7f000, #9fe000);
+  cursor: pointer;
+}
+
+.review-btn {
+  padding: 12px 24px;
+  border-radius: 40px;
+  border: 1px dashed #facc15;
+  background: rgba(250,204,21,0.15);
+  color: #facc15;
+  cursor: pointer;
+}
+
+.review-btn.active {
+  background: #facc15;
+  color: #020617;
+}
+
+.ghost-btn {
+  padding: 12px 24px;
+  border-radius: 40px;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.danger-btn {
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(239,68,68,0.15);
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  cursor: pointer;
+}
+
+/* ===============================
+   ANIMATIONS
+================================ */
+.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

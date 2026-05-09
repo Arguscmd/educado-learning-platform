@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educado LMS | Quiz History</title>
+
+  <link rel="stylesheet" href="css/quiz-history.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<main class="history-page">
+
+  <!-- =============================
+       HERO
+  ============================= -->
+  <section class="history-hero">
+    <div class="hero-inner">
+
+      <!-- BACK BUTTON -->
+      <button class="back-home-btn" onclick="goBack()">
+        <span class="icon">←</span>
+        <span class="text">Back</span>
+      </button>
+
+      <h1>Quiz History</h1>
+      <p>Review your attempts, scores, and performance trends</p>
+    </div>
+  </section>
+
+  <!-- =============================
+       STATS OVERVIEW
+  ============================= -->
+  <section class="history-stats">
+
+    <div class="stat-card">
+      <h4>Total Attempts</h4>
+      <strong>14</strong>
+    </div>
+
+    <div class="stat-card">
+      <h4>Passed</h4>
+      <strong class="green">10</strong>
+    </div>
+
+    <div class="stat-card">
+      <h4>Failed</h4>
+      <strong class="red">4</strong>
+    </div>
+
+    <div class="stat-card">
+      <h4>Average Score</h4>
+      <strong>78%</strong>
+    </div>
+
+  </section>
+
+  <!-- =============================
+       FILTER BAR
+  ============================= -->
+  <section class="history-filters">
+    <select>
+      <option>All Categories</option>
+      <option>UI/UX</option>
+      <option>Development</option>
+      <option>Marketing</option>
+    </select>
+
+    <select>
+      <option>All Status</option>
+      <option>Passed</option>
+      <option>Failed</option>
+    </select>
+  </section>
+
+  <!-- =============================
+       HISTORY LIST
+  ============================= -->
+  <section class="history-list">
+
+    <!-- ITEM -->
+    <div class="history-card slide-up">
+      <div>
+        <h3>UI/UX Fundamentals</h3>
+        <p class="meta">UI/UX • 20 Questions • 20 Min</p>
+      </div>
+
+      <div class="score">
+        <span class="passed">85%</span>
+        <small>Passed</small>
+      </div>
+
+      <div class="actions">
+        <a href="result.html">View Result</a>
+        <a href="quiz.html">Retake</a>
+      </div>
+    </div>
+
+    <div class="history-card slide-up">
+      <div>
+        <h3>JavaScript Basics</h3>
+        <p class="meta">Development • 15 Questions • 15 Min</p>
+      </div>
+
+      <div class="score">
+        <span class="failed">45%</span>
+        <small>Failed</small>
+      </div>
+
+      <div class="actions">
+        <a href="result.html">View Result</a>
+        <a href="quiz.html">Retake</a>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<script src="js/quiz-history.js"></script>
+</body>
+</html>
